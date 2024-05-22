@@ -16,5 +16,5 @@ public interface HotelRepository extends JpaRepository<Hotel, Long> {
 
     Set<Hotel> findByRatingGreaterThan(int rating);
 
-    Optional<Hotel> findByReservationId(UUID id);
+    Optional<Hotel> findByReservationsId(UUID id);
 }
